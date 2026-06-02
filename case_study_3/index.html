@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventist Academy Bacolod – Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-leaf">✝️</span>
+        <span class="logo-text">Adventist <strong>Academy</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/mission.html">Mission &amp; Vision</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/contact.html">Contact Us</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/mission.html">Mission &amp; Vision</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Nurturing Minds,<br>Shaping Futures</h1>
+      <p>Faith-based education that nurtures the whole person — mind, body, and spirit.</p>
+      <a href="pages/about.html" class="btn-primary">Discover Our School</a>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Academic Excellence</h3>
+        <p>A rigorous yet nurturing curriculum designed to challenge and inspire every learner.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Arts &amp; Culture</h3>
+        <p>From painting to music, we celebrate creativity as a core pillar of education.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚽</div>
+        <h3>Sports &amp; Wellness</h3>
+        <p>Active bodies fuel active minds. Our programs build teamwork and resilience.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Global Citizenship</h3>
+        <p>We prepare students to be compassionate, critical thinkers in a changing world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome-strip">
+    <div class="container">
+      <h2>Welcome to Adventist Academy Bacolod</h2>
+      <p>Founded with a passion for holistic education, Adventist Academy Bacolod has been shaping young minds for over three decades. Our dedicated faculty, vibrant community, and state-of-the-art facilities create an environment where every student can thrive.</p>
+      <a href="pages/about.html" class="btn-outline">Learn More About Us</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Adventist Academy Bacolod. All rights reserved.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/contact.html">Contact Us</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Adventist Academy Bacolod</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-leaf">✝️</span>
+        <span class="logo-text">Adventist <strong>Academy</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="mission.html">Mission &amp; Vision</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="mission.html">Mission &amp; Vision</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Gallery</h1>
+    <p>A glimpse into the vibrant life at Adventist Academy Bacolod — moments of learning, creativity, and celebration.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>School Life</h2>
+      <p>Replace these placeholders with your actual school photos inside the <code>images/</code> folder.</p>
+
+      <div class="gallery-grid">
+        <div>
+          <div class="gallery-item">📖</div>
+          <p class="gallery-caption">Students in the library</p>
+        </div>
+        <div>
+          <div class="gallery-item">🎨</div>
+          <p class="gallery-caption">Art class showcase</p>
+        </div>
+        <div>
+          <div class="gallery-item">⚽</div>
+          <p class="gallery-caption">Sports day competition</p>
+        </div>
+        <div>
+          <div class="gallery-item">🔬</div>
+          <p class="gallery-caption">Science laboratory</p>
+        </div>
+        <div>
+          <div class="gallery-item">🎭</div>
+          <p class="gallery-caption">Annual school play</p>
+        </div>
+        <div>
+          <div class="gallery-item">🏆</div>
+          <p class="gallery-caption">Awards ceremony</p>
+        </div>
+        <div>
+          <div class="gallery-item">🌳</div>
+          <p class="gallery-caption">School garden project</p>
+        </div>
+        <div>
+          <div class="gallery-item">🎵</div>
+          <p class="gallery-caption">Music recital</p>
+        </div>
+        <div>
+          <div class="gallery-item">🧑‍💻</div>
+          <p class="gallery-caption">Computer class</p>
+        </div>
+      </div>
+
+      <p style="margin-top:2.5rem; font-size:0.9rem; color:var(--text-muted);">
+        <strong>Note for developers:</strong> To add real images, place them in the <code>images/</code> folder and replace the emoji divs with <code>&lt;img src="../images/your-photo.jpg" alt="Description"&gt;</code> inside each <code>.gallery-item</code>.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Adventist Academy Bacolod. All rights reserved.</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

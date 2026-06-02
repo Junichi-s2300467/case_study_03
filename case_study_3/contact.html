@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Adventist Academy Bacolod</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-leaf">✝️</span>
+        <span class="logo-text">Adventist <strong>Academy</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="mission.html">Mission &amp; Vision</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="mission.html">Mission &amp; Vision</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Reach out to our team anytime.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>📍 <strong>Address:</strong><br>Brgy. Mansilingan, Bacolod City, Negros Occidental</p>
+          <p>📞 <strong>Phone:</strong><br>(034) 434-5678</p>
+          <p>📧 <strong>Email:</strong><br>info@adventistbacolod.edu.ph</p>
+          <p>🕐 <strong>Office Hours:</strong><br>Monday – Friday, 7:00 AM – 5:00 PM</p>
+          <p>🌐 <strong>Website:</strong><br>www.adventistbacolod.edu.ph</p>
+
+          <div style="margin-top:2rem; background:var(--green-mist); border-radius:var(--radius-md); padding:1.25rem; border:1.5px solid var(--green-pale);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem; color:var(--green-dark);">Admissions Inquiries</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">For enrollment and admissions questions, please email<br><strong>admissions@adventistbacolod.edu.ph</strong></p>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.2rem; color:var(--green-dark); margin-bottom:0.5rem;">Send Us a Message</h3>
+          <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Fill out the form below and we'll get back to you within one school day.</p>
+
+          <div class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="e.g. Juan dela Cruz" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="e.g. juan@email.com" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="e.g. 09XX-XXX-XXXX" />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="e.g. Enrollment inquiry" />
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here..."></textarea>
+
+            <button class="btn-submit" onclick="handleSubmit()">Send Message</button>
+            <p id="form-msg" style="margin-top:1rem; font-size:0.9rem; color:var(--green-mid); display:none;">✅ Thank you! Your message has been sent. We'll reply soon.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Adventist Academy Bacolod. All rights reserved.</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    function handleSubmit() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!name || !email) {
+        alert('Please fill in at least your name and email.');
+        return;
+      }
+      document.getElementById('form-msg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
